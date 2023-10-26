@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: audit
+  namespace: gatekeeper-system
+data:
+  provider: "dapr"
+  config: |
+    {
+      "component": "pubsub"
+    }
